@@ -1,0 +1,90 @@
+@import "themes/cat-mocha.css";
+
+* {
+    font-family: Sometype Mono;
+    font-size: 15px;
+    border: none;
+}
+
+window#waybar {
+    background-color: @base;
+}
+
+#workspaces {
+    padding: 0px;
+}
+#workspaces button {
+    margin: 6px 0px 6px 6px;
+    padding: 0px 6px 0px;
+    border-radius: 6px;
+    background-color: @mantle;
+    color: @lavender;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+#workspaces button:hover {
+    color: @rosewater;
+}
+#workspaces button.active {
+    padding: 0px 20px 0px;
+    background-color: @lavender;
+    color: @base;
+}
+#workspaces button.active:hover {
+    background-color: @rosewater;
+}
+
+#window {
+    margin: 6px 0px;
+    padding: 0px 8px 0px;
+    border-radius: 6px;
+    color: @mauve;
+    background-color: @mantle;
+}
+
+#clock {
+    padding: 0px 8px 0px;
+    border-radius: 6px;
+    color: @blue;
+    background-color: @mantle;
+}
+
+#network {
+    margin: 6px 0px;
+    padding: 0px 8px 0px;
+    border-radius: 6px;
+    color: @sky;
+    background-color: @mantle;
+}
+
+#pulseaudio {
+    margin: 6px 0px;
+    padding: 0px 8px 0px;
+    border-radius: 6px;
+    color: @green;
+    background-color: @mantle;
+}
+
+#backlight {
+    margin: 6px 0px;
+    padding: 0px 8px 0px;
+    border-radius: 6px;
+    color: @yellow;
+    background-color: @mantle;
+}
+
+#clock {
+    margin: 6px 0px;
+    padding: 0px 8px 0px;
+    border-radius: 6px;
+    color: @blue;
+    background-color: @mantle;
+}
+
+#battery {
+    margin: 6px 6px 6px 0px;
+    padding: 0px 8px 0px;
+    border-radius: 6px;
+    color: @lavender;
+    background-color: @mantle;
+}

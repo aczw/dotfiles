@@ -1,0 +1,65 @@
+{
+    "mode": "dock",
+    "height": 40,
+    "spacing": 6,
+    
+    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "pulseaudio", "backlight", "battery"],
+    
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "󰇊",
+            "2": "󰇋",
+            "3": "󰇌",
+            "4": "󰇍",
+            "5": "󰇎",
+            "6": "󰇏"
+        },
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "on-click": "activate"
+    },
+
+    "hyprland/window": {
+        "format": "󰊠 {}",
+        "max-length": 40
+    },
+    
+    "clock": {
+        "format": "󰥔 {:%I:%M %p}",
+        "format-alt": "󰃶 {:%A, %b %d}",
+        "tooltip": false
+    },
+
+    "network": {
+        "format": "󰇧 {essid}",
+        "format-disconnected": "󰇨 <span weight='bold'>NONE</span>",
+        "tooltip": false
+    },
+    
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        "format-muted": "󰖁 <span weight='bold'>MUTED</span>",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "tooltip": false
+    },
+
+    "backlight": {
+        "format": "󰖨 {percent}%",
+        "on-click": "brightnessctl set +10%",
+        "on-click-right": "brightnessctl set 10%-",
+        "on-scroll-up": "brightnessctl set +1%",
+        "on-scroll-down": "brightnessctl set 1%-"
+    },
+
+    "battery": {
+        "format": "󰁹 {capacity}%",
+        "format-alt": "{time}",
+        "format-charging": "󰂄 {capacity}% CHRG",
+        "format-time": "󱧥 {H}h {M}m",
+        "tooltip": false
+    }
+}
