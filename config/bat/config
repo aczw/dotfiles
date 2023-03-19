@@ -1,0 +1,9 @@
+# set theme
+--theme='Catppuccin-mocha'
+
+# enable italics
+--italic-text=always
+
+# only show the grid
+--style="grid"
+
