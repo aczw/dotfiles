@@ -1,0 +1,29 @@
+#!/usr/bin/fish
+
+cd ~
+
+# explicitly set XDG variables
+set -gx XDG_CURRENT_DESKTOP Hyprland
+set -gx XDG_SESSION_TYPE wayland
+set -gx XDG_SESSION_DESKTOP Hyprland
+
+# QT variables
+set -gx QT_AUTO_SCREEN_SCALE_FACTOR 1
+set -gx QT_QPA_PLATFORM "wayland;xcb"
+set -gx QT_WAYLAND_DISABLE_WINDOWDECORATION 1
+
+# other toolkits
+set -gx SDL_VIDEODRIVER wayland
+set -gx _JAVA_AWT_WM_NONREPARENTING 1
+set -gx  CLUTTER_BACKEND "wayland"
+set -gx GDK_BACKEND "wayland,x11"
+
+# log WLR errors and logs to the hyprland log
+set -gx HYPRLAND_LOG_WLR 1
+
+# tell XWayland to use a cursor theme, set size
+set -gx XCURSOR_THEME macOS-BigSur
+set -gx XCURSOR_SIZE 24
+
+Hyprland
+
