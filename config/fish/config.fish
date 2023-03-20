@@ -15,7 +15,6 @@ abbr --add py python
 
 # add stuff to $PATH,
 fish_add_path ~/.local/bin
-fish_add_path ~/.local/bin/haskell
 
 # disable greeting on startup
 set -g fish_greeting

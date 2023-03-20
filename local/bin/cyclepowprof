@@ -10,4 +10,5 @@ else
     end
 end
 
+# send noti about new profile
 notify-send -t 3000 "asusctl" "$(asusctl profile -p)"
