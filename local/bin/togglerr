@@ -1,0 +1,11 @@
+#!/usr/bin/fish
+
+# check what current refresh rate is and set the opposite
+if string match -q "*120.*" (hyprctl -j monitors)
+    set refresh_rate 60
+else
+    set refresh_rate 120
+end
+
+hyprctl keyword monitor ", 2560x1600@$refresh_rate, 0x0, 1.5"
+notify-send -t 3000 "refresh rate" "set to $refresh_rate Hz"
