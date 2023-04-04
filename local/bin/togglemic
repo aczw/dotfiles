@@ -5,7 +5,7 @@ wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 
 # check if mic is currently muted or not, and send noti about it
 if string match -q "*MUTED*" (wpctl get-volume @DEFAULT_AUDIO_SOURCE@)
-    set mute_status "muted"
+    set mute_status "now muted"
 else
     set mute_status "now unmuted"
 end

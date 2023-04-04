@@ -13,6 +13,12 @@ abbr --add sued sudoedit
 abbr --add pf pfetch
 abbr --add py python
 
+# git abbreviations
+abbr --add ga git add
+abbr --add gc git commit
+abbr --add gp git push
+abbr --add gs git status
+
 # add stuff to $PATH,
 fish_add_path ~/.local/bin
 
