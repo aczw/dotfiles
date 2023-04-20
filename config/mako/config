@@ -1,0 +1,31 @@
+width=350
+height=100
+
+layer=overlay
+anchor=top-right
+
+on-button-left=invoke-default-action
+on-button-middle=dismiss-all
+on-button-right=dismiss
+
+font=Sometype Mono 11.5
+text-alignment=left
+
+background-color=#1e1e2e
+text-color=#cdd6f4
+
+# depends on Hyprland's window gaps
+outer-margin=16
+margin=0,0,8,0
+padding=8
+
+border-size=3
+border-color=#b4befe
+border-radius=6
+
+progress-color=over #f5e0dc
+
+icon-path=/usr/share/icons/Adwaita
+
+default-timeout=3000
+
