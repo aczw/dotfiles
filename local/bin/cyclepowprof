@@ -11,4 +11,5 @@ else
 end
 
 # send noti about new profile
-notify-send -t 3000 "asusctl" "$(asusctl profile -p)"
+set -l profile (string split --no-empty " " (string lower (asusctl profile -p)))
+notify-send -t 3000 "System" "Power profile set to <i>$profile[4]</i>"

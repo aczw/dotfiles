@@ -8,4 +8,4 @@ else
 end
 
 hyprctl keyword monitor ", 2560x1600@$refresh_rate, 0x0, 1.5"
-notify-send -t 3000 "refresh rate" "set to $refresh_rate Hz"
+notify-send -t 3000 "Display" "Refresh rate set to $refresh_rate Hz"
